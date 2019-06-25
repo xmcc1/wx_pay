@@ -1,0 +1,17 @@
+server:
+  port: 8888 #\u4FEE\u6539\u7AEF\u53E3\u53F7 \u6CE8\u610F\u5192\u53F7\u540E\u9762\u9700\u8981\u6709\u7A7A\u683C
+  servlet:
+    context-path: /sell
+#druid \u914D\u7F6E
+spring:
+  druid:
+    url: jdbc:mysql://192.168.1.111:3306/sell?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT
+    driverClass: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    maxAction: 30 #\u6700\u5927\u8FDE\u63A5\u6570
+    maxWait: 10000 #\u83B7\u5F97\u94FE\u63A5\u7684\u6700\u5927\u7B49\u5F85\u65F6\u95F4
+  jpa:
+    show-sql: true  #\u663E\u793Asql\u8BED\u53E5
+
+
